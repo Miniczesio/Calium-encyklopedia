@@ -1,0 +1,200 @@
+@font-face {
+    font-family:"Chomsky";
+    src: url(Chomsky.otf);
+}
+@font-face {
+    font-family:"tresc";
+    src: url(tresc.ttf);
+}
+body{
+    margin: 0;
+}
+
+
+
+/**/
+
+/*Kontener pełnego opisu*/
+#kont-tytul{
+    width: fit-content;
+    margin: auto;
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tytul{
+    font-family: Chomsky;
+    font-size: 200%;
+    transition: opacity 0.7s;
+}
+#pelnyopis{
+    font-family: tresc;
+    font-size: larger;
+    transition: opacity 0.7s;
+}
+
+#kontener-tekstu{
+    background-color: rgb(233, 175, 127);
+    width: 70%;
+    height: 120%;
+    margin: auto;
+    border: 10px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+}
+
+#populacja-box{
+    text-align: center;
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 10%;
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+#religia-box{
+    text-align: center;
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    width: 40%;
+    height: 10%;
+    display: inline-block;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#kont-opis{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    margin-right: 0.5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 70%;
+}
+
+#kont-ciekawostki{
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    width: 80%;
+    margin: auto;
+}
+.tekst{
+    font-family: tresc;
+    font-size: larger;
+    transition: opacity 0.7s;
+}
+#kont-organizacje{
+    border: 2px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 70%;
+}
+
+
+/*Mapa */
+#pelnykont{
+    width: 100%;
+    z-index: 11;
+    margin: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#kontener-mapy{
+    background-color: rgb(167, 73, 73);
+    width: 70%;
+    z-index: 10;
+    border: 10px;
+    border-color: rgb(129, 82, 43);
+    border-style: inset;
+    margin: auto;
+}
+#box{
+    width: 300px;
+    background-color: rgb(233, 175, 127);
+    z-index: 100;
+    transition: scale 0.6s; 
+    position: absolute ;
+    scale:0%;
+    border: 10px;
+    border-style: inset;
+    border-color:rgb(129, 82, 43) ;
+    text-align: center;
+    padding: 0%;
+}
+svg{
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.populacja{
+    opacity: 100%;
+    display: none;
+    transition: display 0.6s;
+}
+#dragonborn{
+    transition: opacity 0.6s;
+}
+
+/*Kraje*/
+.kraj{
+    opacity: 50%;
+    transition: 0.3s;
+}
+.kraj:hover{
+    opacity: 90%;
+    scale: 101%;
+}
+
+/*Ustawienia CSS dla boxu z mini opisem*/
+#tytulbox{
+    color:rgb(51, 27, 11);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Chomsky;
+    font-size: larger;
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+#krotkiopis{
+    color: rgb(51, 27, 11);
+    font-size: large;
+    font-family: tresc;
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+
+/* Menu */
+#menu{
+    height: 5%;
+    position: fixed;
+    width: 100%;
+    background-color: blue;
+}
