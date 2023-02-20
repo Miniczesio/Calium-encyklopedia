@@ -10,12 +10,89 @@ body{
     margin: 0;
     background-image: url("bg.jpg");
     background-attachment: fixed;
+    overflow: overlay;
+}
+/**/
+
+
+
+/* Menu */
+#menu-kontent{
+    height: auto;
+    position: fixed;
+    width: 15%;
+    background-color: rgba(58, 28, 4, 0.6);
+    left: -22%;
+    transition: left 0.6s;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 30px 30px 30px 0px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 60px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 80px rgb(58, 28, 4) ;
+    z-index: 10;
+}
+#menu-kontent:hover{
+    left: 0%;
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 30px;
+}
+a:hover{
+    color: azure;
+}
+#menu-text{
+    display: block;
+    font-family: tresc;
+    position: absolute;
+    left: 85%;
+    width: fit-content;
+    height: 10%;
+    background-image: url(scrolly.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+    margin-top: auto;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    top: 0%;
+    transform: rotate(90deg);
 }
 
 
-
-/**/
-
+/*Customowy scroll*/
+::-webkit-scrollbar {
+    width: fit-content;
+}
+::-webkit-scrollbar-track {
+    background-image: url(scroll.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+    background-image: url(scrolly.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+}
 /*Kontener pełnego opisu*/
 #kont-tytul{
     width: fit-content;
@@ -199,7 +276,6 @@ body{
 
 #kontener-mapy{
     width: 70%;
-    z-index: 10;
     margin: auto;
     border-image-slice: 200 200 200 200;
     border-image-width: 60px 60px 60px 60px;
@@ -214,23 +290,25 @@ body{
 }
 #box{
     width: 300px;
-    background-color: rgb(233, 175, 127);
+    background-color: rgba(58, 28, 4, 0.6);
+    box-shadow: 0px 0px 80px rgb(58, 28, 4) ;
+    backdrop-filter: blur(3px);
     z-index: 100;
     transition: scale 0.6s; 
     position: absolute ;
     scale:0%;
     border-image-slice: 200 200 200 200;
-    border-image-width: 60px 60px 60px 60px;
+    border-image-width: 30px 30px 30px 30px;
     border-image-outset: 0px 0px 0px 0px;
     border-image-repeat: round round;
     border-image-source: url(border.png);
     border-style: solid;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
+    
 }
 svg{
     
-    z-index: 5;
     position: relative;
     width: 100%;
     display: block;
@@ -245,6 +323,7 @@ svg{
 .kraj:hover{
     opacity: 90%;
     scale: 101%;
+    cursor: pointer;
 }
 
 /*Ustawienia CSS dla boxu z mini opisem*/
@@ -256,6 +335,8 @@ svg{
     font-size: larger;
     opacity: 0%;
     transition: opacity 0.6s;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
 }
 #krotkiopis{
     color: rgb(51, 27, 11);
@@ -263,16 +344,79 @@ svg{
     font-family: tresc;
     opacity: 0%;
     transition: opacity 0.6s;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
 }
 
 
-/* Menu */
-#menu{
-    height: 5%;
-    position: fixed;
-    width: 100%;
-    background-color: blue;
+
+
+#kontener-pliki{
+    background-color: rgba(58, 28, 4, 0.6);
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 20%;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .populacja{
     height: 50px;
     width: 50px;

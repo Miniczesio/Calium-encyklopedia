@@ -152,8 +152,8 @@ function pozycja(event,numer){
     var tytul=document.getElementById("tytulbox");
     var opis=document.getElementById("krotkiopis");
 
-    box.style.marginLeft=event.clientX+11+"px";
-    box.style.marginTop=event.clientY+11+"px";
+    box.style.marginLeft=event.clientX+20+"px";
+    box.style.marginTop=event.clientY+20+"px";
     box.style.scale="100%";
     tytul.style.opacity="100%";
     opis.style.opacity="100%";
