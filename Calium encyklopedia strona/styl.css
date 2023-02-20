@@ -1,0 +1,682 @@
+@font-face {
+    font-family:"Chomsky";
+    src: url(Chomsky.otf);
+}
+@font-face {
+    font-family:"tresc";
+    src: url(tresc.ttf);
+}
+body{
+    margin: 0;
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+}
+
+
+
+/**/
+
+/*Kontener pełnego opisu*/
+#kont-tytul{
+    width: fit-content;
+    margin: auto;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tytul{
+    font-family: Chomsky;
+    font-size: 200%;
+    transition: opacity 0.7s;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
+}
+.podtytul{
+    font-family: Chomsky;
+    font-size: 150%;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
+}
+#pelnyopis{
+    font-family: tresc;
+    font-size: larger;
+    transition: opacity 0.7s;
+}
+
+#kontener-tekstu{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 28, 4, 0.6);
+    box-shadow: 0px 0px 80px rgb(58, 28, 4) ;
+    margin-bottom: 100px;
+    backdrop-filter: blur(3px);
+}
+#kontener-pliki{
+    background-color: rgba(58, 28, 4, 0.6);
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 20%;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#populacja-box{
+    text-align: center;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 30px;
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+#religia-box{
+    text-align: center;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 30px;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#kont-opis{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+#kont-ciekawostki{
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.tekst{
+    font-family: tresc;
+    font-size: larger;
+    transition: opacity 0.7s;
+    margin: 30px;
+    color: rgb(233, 175, 127);
+    text-shadow: 0px 0px 5px black;
+}
+#kont-organizacje{
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border2.png);
+    border-style: solid;
+    padding: 50px;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: fit-content;
+    text-align: center;
+}
+#organizacje{
+    text-align: center;
+}
+#one{
+    display: flex;
+    height: fit-content;
+}
+#two{
+    display: flex;
+    height: fit-content;
+}
+
+
+/*Mapa */
+#pelnykont{
+    width: 100%;
+    z-index: 11;
+    margin: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#kontener-mapy{
+    width: 70%;
+    z-index: 10;
+    margin: auto;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 30px;
+    background-color: rgba(58, 28, 4, 0.6);
+    box-shadow: 0px 0px 80px rgb(58, 28, 4) ;
+    backdrop-filter: blur(3px);
+}
+#box{
+    width: 300px;
+    background-color: rgb(233, 175, 127);
+    z-index: 100;
+    transition: scale 0.6s; 
+    position: absolute ;
+    scale:0%;
+    border-image-slice: 200 200 200 200;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url(border.png);
+    border-style: solid;
+    padding: 30px;
+    text-align: center;
+}
+svg{
+    
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/*Kraje*/
+.kraj{
+    opacity: 50%;
+    transition: 0.3s;
+}
+.kraj:hover{
+    opacity: 90%;
+    scale: 101%;
+}
+
+/*Ustawienia CSS dla boxu z mini opisem*/
+#tytulbox{
+    color:rgb(51, 27, 11);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Chomsky;
+    font-size: larger;
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+#krotkiopis{
+    color: rgb(51, 27, 11);
+    font-size: large;
+    font-family: tresc;
+    opacity: 0%;
+    transition: opacity 0.6s;
+}
+
+
+/* Menu */
+#menu{
+    height: 5%;
+    position: fixed;
+    width: 100%;
+    background-color: blue;
+}
+.populacja{
+    height: 50px;
+    width: 50px;
+}
+.religia{
+    height: 50px;
+    width: 50px;
+}
+
+#arakora {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #czlowiek {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #dragonborn {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #elf {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #elf-ork {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #filborg {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #foreclaimer {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #gnom {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #goblin {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #goliat {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #krasnolud {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #lizardfolk {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #mousefolk {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #niziolek {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #ork {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #pol-elf {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #pol-orc {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #tabaxi {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    
+    #tiefling {
+    opacity: 0%;
+    display: none;
+    transition: display 0.6s, opacity 1s;
+    }
+    #aike {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #allikas {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #auril {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #clismo {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #darrari {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #daukar {
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+        
+    #dokutsu {
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+        
+    #dionizos {
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+        
+    #ehiza {
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+        
+    #furtivo {
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+    #heli{
+            opacity: 0%;
+            display: none;
+            transition: display 0.6s, opacity 1s;
+    }
+        
+    #iladiad {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #kakuz {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #khorne {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #kodu {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #kranken {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #lanaw {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #leegid {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #logos {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #mejika {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #meridia {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #minez {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #morker {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+        
+    #murna {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+    }
+    #nevfasi {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #nekaza {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #opus {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #perte {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #rakkaus {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #sainban {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #sains {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #sapa {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #shi {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #skryf {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #smee {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #soneri {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #suba {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #syva {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #thorbinus {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #titok {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #torineti {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #torm {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #troskab {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #tuul {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #varenos {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #varvidia {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #vesi {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
+        
+        #zortea {
+        opacity: 0%;
+        display: none;
+        transition: display 0.6s, opacity 1s;
+        }
