@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generator Postaci</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div id="menu-kontent">
+            <div id="menu-text">MENU</div>
+            <a class="podtytul" href="index.html">Strona Główna</a>
+            <a class="podtytul" href="pobranie.html">Pliki oraz Linki</a>
+            <a class="podtytul" href="religie i rasy.html">Rasy i Religie</a>
+            <a class="podtytul" href="">O Autorze</a>
+        </div>
+        <div id="kontener-generator">
+            <div id="roll-box">
+                <p class="podtytul" id="nazwast">Nazwa Stat</p>
+                <span class="dice" id="d1">1</span>
+                <span class="dice" id="d2">2</span>
+                <span class="dice" id="d3">3</span>
+                <span class="dice" id="d4">4</span>
+            </div>
+            <span>
+                <label for="imie">Imię</label>
+                <input type="text" name="imie">
+                <label for="Rasa">Rasa</label>
+                <select name="Rasa" id="rasa" onchange="rasaupdate()">
+                    <option value="1">Arakora</option>
+                    <option value="2">Człowiek</option>
+                    <option value="3">Dragonborn</option>
+                    <option value="4">Elf</option>
+                    <option value="5">Elf-Ork</option>
+                    <option value="6">Filborg</option>
+                    <option value="7">Foreclaimer</option>
+                    <option value="8">Gnom</option>
+                    <option value="9">Goblin</option>
+                    <option value="10">Goliat</option>
+                    <option value="11">Krasnolud</option>
+                    <option value="12">Lizardfolk</option>
+                    <option value="13">Mousefolk</option>
+                    <option value="14">Niziołek</option>
+                    <option value="15">Ork</option>
+                    <option value="16">Pół-Elf</option>
+                    <option value="17">Pół-Ork</option>
+                    <option value="18">Tabaxi</option>
+                    <option value="19">Tiefling</option>
+                </select>
+                <input type="button" name="random-rasa">
+                <label for="Klasa">Klasa</label>
+                <select name="Klasa" id="klasa" onchange="klasaupdate()">
+                    <option value="1">Astrologer</option>
+                    <option value="2">Alchemik</option>
+                    <option value="3">Arcane Blade</option>
+                    <option value="4">Artificer</option>
+                    <option value="5">Barbarzyńca</option>
+                    <option value="6">Bard</option>
+                    <option value="7">Blood Hunter</option>
+                    <option value="8">Druid</option>
+                    <option value="9">Kleryk</option>
+                    <option value="10">Łotr</option>
+                    <option value="11">Łowca</option>
+                    <option value="12">Mag</option>
+                    <option value="13">Mag Mięśni</option>
+                    <option value="14">Mnich</option>
+                    <option value="15">Nekromanta</option>
+                    <option value="16">Paladyn</option>
+                    <option value="17">Psionic</option>
+                    <option value="18">Savant</option>
+                    <option value="19">Scholar</option>
+                    <option value="20">Shield Master</option>
+                    <option value="21">Sorcerer</option>
+                    <option value="22">Szaman</option>
+                    <option value="23">Warlock</option>
+                    <option value="24">Wiedźma</option>
+                    <option value="25">Wojownik</option>
+                </select>
+                <input type="button" name="random-klasa6">
+            </span>
+            <div id="one">
+                    <div class="kontenery">
+                        <span id="stat1">SIŁ</span><br>
+                        <spam id="base1" class="base">0</spam><br>
+                        <spam id="mod1" class="modyfikator">+0</spam><br>
+                    </div>
+                    <div class="kontenery">
+                        <span id="stat2">ZR</span><br>
+                        <spam id="base2" class="base">2</spam><br>
+                        <spam id="mod2" class="modyfikator">+0</spam><br>
+                    </div>
+                    <div class="kontenery">
+                        <span id="stat3">KON</span><br>
+                        <spam id="base3" class="base">0</spam><br>
+                        <spam id="mod3" class="modyfikator">+0</spam><br>
+                    </div>
+                    <div class="kontenery">
+                        <span id="stat4">INT</span><br>
+                        <spam id="base4" class="base">0</spam><br>
+                        <spam id="mod4" class="modyfikator">+0</spam><br>
+                    </div>
+                    <div class="kontenery">
+                        <span id="stat5">MDR</span><br>
+                        <spam id="base5" class="base">0</spam><br>
+                        <spam id="mod5" class="modyfikator">+0</spam><br>
+                    </div>
+                    <div class="kontenery">
+                        <span id="stat6">CHR</span><br>
+                        <spam id="base6" class="base">0</spam><br>
+                        <spam id="mod6" class="modyfikator">+0</spam><br>
+                    </div>
+                    <button id="rolling" onclick="statsroll()">Rzuć na statystyki</button>
+                <div id="umiejetnosci" class="kontenery">
+
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="generator.js"></script>
+    </body>
+</html>
